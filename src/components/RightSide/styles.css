@@ -1,0 +1,104 @@
+.right-side {
+  flex: 1;
+  display: flex;
+  margin-left: 30px;
+}
+
+.grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.main {
+  flex: 1;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  flex-direction: column;
+  padding: 20px;
+  background-color: brown;
+}
+
+.gridIcon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, .1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gridTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.gridInfo {
+  font-size: 12px;
+  margin-top: 14px;
+}
+
+.yourImc {
+  font-size: 17px;
+  margin: 10px 0 50px 0;
+}
+
+.rightBig {
+  flex: 1;
+  display: flex;
+}
+
+.rightArrow {
+  position: absolute;
+  background-color: #227C9D;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: -35px;
+  margin-top: 145px;
+  transition: all ease .3s;
+}
+
+.rightArrow:hover {
+  opacity: 0.8;
+}
+
+
+@media (max-width: 770px) {
+
+  .right-side {
+    flex: 1;
+    color: #3A4B5C;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .rightArrow {
+    margin-left: 0;
+    margin-top: 0;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 430px) {
+  .grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .right-side {
+    margin-top: 0;
+  }
+}
