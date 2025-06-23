@@ -16,12 +16,12 @@ body {
   display: flex;
   max-width: 900px;
   flex-direction: column;
-  background-color: #CCC;
+  background-color: #ccc;
   padding: 20px;
 }
 
 .img-box {
-  border-bottom: 2px solid #FFF;
+  border-bottom: 2px solid #fff;
 }
 
 .container {
@@ -30,26 +30,24 @@ body {
 }
 
 @media (max-width: 770px) {
-
   .box {
-      height: 100vh;
-      background-color: #CCC;
+    height: 100vh;
+    background-color: #ccc;
   }
 
   .container {
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 }
 
 @media (max-width: 430px) {
-  
   body {
-      background-color: #CCC;
+    background-color: #ccc;
   }
 
   .container {
-      padding-bottom: 20px;
-      background-color: #CCC;
+    padding-bottom: 20px;
+    background-color: #ccc;
   }
 }
