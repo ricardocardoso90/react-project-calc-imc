@@ -1,11 +1,8 @@
-import '../RightSide/styles.css';
-import { level } from "../CalcImc";
+import '../right-side/styles.css';
+import { level } from "../calc-imc";
 
 import upImage from '../../assets/up.png';
 import downImage from '../../assets/down.png';
-
-// const upImage = require('../../assets/up.png') as string;
-// const downImage = require('../../assets/down.png') as string;
 
 type Props = {
     item: level;
@@ -25,7 +22,7 @@ export const GridItem = ({ item }: Props) => {
 
             <div className='gridInfo'>
                 {/* <> */}
-                    IMC está entre <strong>{item.imc[0]}</strong> e <strong>{item.imc[1]}</strong>
+                IMC está entre <strong>{item.imc[0]}</strong> e <strong>{item.imc[1]}</strong>
                 {/* </> */}
             </div>
         </div>

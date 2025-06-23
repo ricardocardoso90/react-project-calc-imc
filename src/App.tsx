@@ -1,11 +1,11 @@
 import './App.css';
-import './components/LeftSide/styles.css';
-import './components/RightSide/styles.css';
+import './components/left-side/styles.css';
+import './components/right-side/styles.css';
 
 import { useState } from 'react';
-import { calcImc } from './components/CalcImc';
-import { levels, level } from './components/CalcImc';
-import { GridItem } from './components/GridItem';
+import { calcImc } from './components/calc-imc';
+import { levels, level } from './components/calc-imc';
+import { GridItem } from './components/grid-item';
 
 function App() {
 
