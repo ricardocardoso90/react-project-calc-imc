@@ -9,9 +9,9 @@ import { GridItem } from "./components/grid-item";
 import { levels, level } from "./components/calc-imc";
 
 function App() {
+  const [toShow, setToShow] = useState<level | null>(null);
   const [heightField, setHeightField] = useState<number>(0);
   const [weightField, setWeightField] = useState<number>(0);
-  const [toShow, setToShow] = useState<level | null>(null);
 
   const imgPowered = require("./assets/powered.png") as string;
   const leftArrow = require("./assets/leftarrow.png") as string;
@@ -29,7 +29,7 @@ function App() {
       setToShow(calcImc(heightField, weightField));
     } else {
       alert("Algo de errado não está certo!!");
-    }
+    };
   };
 
   const handleBackButton = () => {
@@ -101,6 +101,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;

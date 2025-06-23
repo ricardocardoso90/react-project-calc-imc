@@ -1,5 +1,5 @@
-import "../right-side/styles.css";
 import { level } from "../calc-imc";
+import "../../styles/right-side/styles.css";
 
 import upImage from "../../assets/up.png";
 import downImage from "../../assets/down.png";
